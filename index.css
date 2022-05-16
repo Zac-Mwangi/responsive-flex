@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #d3d3d3;
+}
+
+
+/* Main Container */
+
+.locationMainContainer {
+    display: flex;
+    border-color: black;
+    margin: 15px;
+}
+
+
+/* both the left and right side */
+
+.locationMainContainer>.locationImage,
+.locationContent {
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* LOcation Images */
+
+.locationMainContainer>.locationImage>img {
+    width: 60vh;
+}
+
+
+/* for responsiveness */
+
+@media screen and (max-width: 1250px) {
+    .locationMainContainer {
+        flex-direction: column;
+    }
+    .locationMainContainer>.locationImage>img {
+        width: 100%;
+    }
+}
